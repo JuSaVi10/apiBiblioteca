@@ -93,6 +93,7 @@ class UsuarioController extends Controller
         if ($request->filled('password')){
             $validatedData['password'] = bcrypt($request->input('password'));
         }
+        
 
         $usuario->fill($validatedData);
 
